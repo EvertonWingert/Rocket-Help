@@ -1,3 +1,4 @@
+import 'package:app/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 
 class SignInPage extends StatefulWidget {
@@ -42,7 +43,9 @@ class _SignInPageState extends State<SignInPage> {
                       ),
                       ElevatedButton(
                         child: Text('Entrar'),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pushReplacementNamed(Routes.home);
+                        },
                         style: ElevatedButton.styleFrom(
                             fixedSize: Size(400, 50),
                         ),
